@@ -1,0 +1,15 @@
+{
+  "name": "React-UI-Components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.dev.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
