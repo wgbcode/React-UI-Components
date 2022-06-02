@@ -2,14 +2,26 @@
   "name": "React-UI-Components",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.config.dev.js",
+  "main": "index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wgbcode/React-UI-Components.git"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wgbcode/React-UI-Components/issues"
+  },
+  "homepage": "https://github.com/wgbcode/React-UI-Components#readme",
+  "devDependencies": {
+    "webpack": "4.29.6",
+    "webpack-cli": "3.2.3"
+  }
 }
