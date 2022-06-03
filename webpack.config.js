@@ -1,15 +1,11 @@
 // 导入路径
 const path = require('path')
-// 导入插件
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 // 配置 ts、tsx 导出的模块规则
 module.exports = {
-    // 模式
-    mode: "production",
     // 入口
     entry: {
         index:'./lib/index.tsx'  // 待转译文件地址
-    },  
+    },
     // 出口
     output: {
         path: path.resolve(__dirname, 'dist/lib'),  // 绝对路径；path.resolve() 将 __dirname 和 dist/lib 连起来；__dirname 指当前路径
@@ -27,10 +23,8 @@ module.exports = {
             }
         ],
     },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: 'index.html'
-        })
-    ]
-
+    // 解析或决策
+    resolve: {
+        extensions:['.ts','.tsx','.js','.jsx']  // 扩展支持类型
+    },
 }
