@@ -1,5 +1,7 @@
 // 导入路径
 const path = require('path')
+// 导入插件
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 // 配置 ts、tsx 导出的模块规则
 module.exports = {
     // 模式
@@ -23,6 +25,12 @@ module.exports = {
                 test: /\.tsx?$/ , // 转译的文件类型，以 ts 或者 tsx 结尾（$ 表示以此结尾）
                 loader:"awesome-typescript-loader"   // 配置使用的加载程序
             }
-        ]
-    }
+        ],
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: 'index.html'
+        })
+    ]
+
 }
