@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "dist",
     "declaration": true,
     "baseUrl": ".",
     "module": "esnext",
@@ -21,7 +22,7 @@
     "allowSyntheticDefaultImports": true,
     "noUnusedLocals": true
   },
-  "include": ["./lib/**/*"],
+  "include": ["./lib/**/*", "dist/lib/index.d.ts"],
   "exclude": [
     "node_modules",
     "build",

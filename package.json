@@ -2,7 +2,8 @@
   "name": "React-UI-Components",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/lib/index",
+  "types": "dist/lib/index",
   "directories": {
     "lib": "lib"
   },
