@@ -1,6 +1,11 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import Button from "./button";
+import Icon from "./icon";
 
 console.log(React);
-ReactDOM.render(<Button></Button>, document.body);
+ReactDOM.render(
+  <div>
+    <Icon name="wechart" />
+  </div>,
+  document.querySelector("#root")
+);
