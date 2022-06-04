@@ -10,8 +10,7 @@ const fn: React.ReactEventHandler = (e) => {
 
 ReactDOM.render(
   <div>
-    <Icon name="wechart" onClick={fn} />
-    <Icon name="qq" onClick={fn} />
+    <Icon name="wechart" onClick={fn} className="wechart" />
   </div>,
   document.querySelector("#root")
 );
