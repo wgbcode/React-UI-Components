@@ -25,6 +25,10 @@ module.exports = {
                 test: /\.svg$/,
                 loader: 'svg-sprite-loader', // 把 svg 文件转译成雪碧图
             },
+            {
+                test: /\.scss$/,
+                use: ['style-loader', 'css-loader', 'sass-loader']
+            }
         ],
     },
     // 解析或决策
