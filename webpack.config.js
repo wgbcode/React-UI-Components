@@ -19,11 +19,11 @@ module.exports = {
         rules: [
             {
                 test: /\.tsx?$/ , // 转译的文件类型，以 ts 或者 tsx 结尾（$ 表示以此结尾）
-                loader:"awesome-typescript-loader"   // 转译和类型检查
+                loader:"awesome-typescript-loader"   // 检查类型并将 ts 文件转译成 js 文件
             },
-                  {
+            {
                 test: /\.svg$/,
-                loader: 'svg-sprite-loader',
+                loader: 'svg-sprite-loader', // 把 svg 文件转译成雪碧图
             },
         ],
     },

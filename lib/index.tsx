@@ -5,7 +5,8 @@ import Icon from "./icon";
 console.log(React);
 ReactDOM.render(
   <div>
-    <Icon />
+    <Icon name="wechart" />
+    <Icon name="qq" />
   </div>,
   document.querySelector("#root")
 );
