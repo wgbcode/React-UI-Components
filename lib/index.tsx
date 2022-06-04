@@ -3,10 +3,15 @@ import * as ReactDOM from "react-dom";
 import Icon from "./icon";
 
 console.log(React);
+
+const fn = () => {
+  console.log("我被点击了");
+};
+
 ReactDOM.render(
   <div>
-    <Icon name="wechart" />
-    <Icon name="qq" />
+    <Icon name="wechart" onClick={fn} />
+    <Icon name="qq" onClick={fn} />
   </div>,
   document.querySelector("#root")
 );
