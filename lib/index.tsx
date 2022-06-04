@@ -4,8 +4,8 @@ import Icon from "./icon";
 
 console.log(React);
 
-const fn = () => {
-  console.log("我被点击了");
+const fn: React.ReactEventHandler = (e) => {
+  console.log(e.target);
 };
 
 ReactDOM.render(
