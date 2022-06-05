@@ -10,7 +10,14 @@ const fn: React.ReactEventHandler = (e) => {
 
 ReactDOM.render(
   <div>
-    <Icon name="wechart" onClick={fn} className="wechart" />
+    <Icon
+      name="wechart"
+      onClick={fn}
+      className="wechart"
+      onMouseEnter={() => console.log("enter")}
+      onMouseLeave={() => console.log("leave")}
+      onTouchStart={() => console.log("touch")}
+    />
   </div>,
   document.querySelector("#root")
 );
