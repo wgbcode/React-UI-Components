@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon 组件 渲染成功 1`] = `
+<span>
+  <svg
+    className="fui-icon"
+  >
+    <use
+      xlinkHref="#testIcon"
+    />
+  </svg>
+</span>
+`;
